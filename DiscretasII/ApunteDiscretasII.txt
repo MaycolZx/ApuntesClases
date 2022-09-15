@@ -1,0 +1,65 @@
+E=
+Ω = {}
+E c Ω
+   _    c
+E'=E = E
+
+A u B
+A (interseccion) B
+
+		      c
+A-B = A(interceccion)B
+
+
+1) P(E) >= 0
+2) P(Ω) = 1
+3) P(A (SimboloUnionDisjunta) B) = P(A)+P(B)
+
+
+Consecuencias
+1)P(o/) = 0
+  o/ U Ω = Ω
+  o/ (simboloInterseccion) Ω = o/
+P(Ω)= P(o/ U Ω) = P(o/) + P(Ω)
+
+
+Consecuencias
+1)P(o/)=0
+2)P(A') = 1 - P(A)
+  A' U A = Ω
+  P(A' (SimboloUnionDisjunta) A) = P(Ω) = 1
+  P(A')+P(A)=1
+  P(A')=1-P(A)
+
+Consecuencias
+1)P(o/) = 0
+2)P(A') = 1-P(A)
+3)(A c B)
+  P(A) <= P(B)
+	B = A (SimboloUnionDisjunta) (B-A)
+	P(B) = P(A)+P(B-A)
+
+4)0 <= P(A) <= 1
+	o/ < A < Ω
+	P(o/) <= P(A) <= P(Ω)
+
+5)P(AUB) = P(A)+P(B)-P(A(SimbloInterseccion)B)
+
+
+-Ejemplo:
+  A U B = A (SimboloUnionDisjunta) (B-A)
+
+
+-----------------------------------------------------------
+  P(A U B)=P(A)+P(B-A)
+  B=(B-A) (SimboloUnionDisjunta) (A(simboloInterseccion)B)
+  P(B) = P(B-A)+P(A(SimbloInterseccion)B)
+  P(B-A) = P(B) - P(A(SimbloInterseccion)B)
+
+-Ejemplo:
+Podria suceder que la probabilidad salga 3/4
+P({c}) = 3/4
+P({s}) = 1/4
+{c} U {s} = Ω
+P({c}(SimboloUnionDisjunta){s}) = P(Ω) = 1
+3/4 + P({s}) = 1
