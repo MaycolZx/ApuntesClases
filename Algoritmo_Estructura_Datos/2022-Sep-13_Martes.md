@@ -93,3 +93,21 @@ int main(){
     return 0;
 }
 ```
+
+Deque
+
+La mayor parte de veces sera k y dependiendo de que tan grande sea lo que quedramos almacenas este puede
+tener "colpt" + "colm"
+
+            vector list Deque
+push_back   k+ exp  k   k+cp+em
+push_front  n+exp   k   k+cp+em
+pop_back    k+col   k   k+colpt+colm
+pop_front   n+col   k   k+colpt+colm
+[]          k       n   k
+
+[6][7][3][8][2]     [9][2][7][2][9]     [4][][][][]
+
+
+Deque : Es un hibrido entre vector y list, dado que este tiende a asimilarse a una list y un vector
+tomando en la mayoria de veces un valor "k"(constante)
