@@ -101,6 +101,7 @@ La mayor parte de veces sera k y dependiendo de que tan grande sea lo que quedra
 tener "colpt" + "colm"
 
 |            |vector |list |Deque|
+|--------------|--------|----|-------|
 |  push_back   |k+ exp  |k   |k+cp+em|
 |  push_front  |n+exp   |k   |k+cp+em|
 |  pop_back    |k+col   |k   |k+colpt+colm|
@@ -108,9 +109,8 @@ tener "colpt" + "colm"
 |  []          |k       |n   |k|
 
 |6|7|3|7|2|
-
+|-|-|-|-|-|
 |9|2|7|2|9|
-
 |4| | | | |
 
 [6][7][3][8][2]     [9][2][7][2][9]     [4][][][][]
